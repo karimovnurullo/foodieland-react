@@ -1,0 +1,253 @@
+.home {
+   width: 100%;
+   height: auto;
+   margin: auto;
+
+   .radius {
+      width: 100%;
+      height: fit-content;
+      margin: auto;
+      display: flex;
+
+      .left {
+         position: relative;
+         width: 50%;
+         height: 100%;
+         background: #E7FAFE;
+         border-radius: 40px 0 0 40px;
+         padding: 50px;
+
+         .island {
+            height: 45px;
+            width: 156px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 30px;
+
+            p {
+               font-size: 14px;
+               color: #000;
+               font-weight: 600;
+            }
+         }
+
+         h1 {
+            font-size: 64px;
+            color: #000;
+            line-height: 70px;
+            font-weight: 600;
+            margin-top: 20px;
+         }
+
+         p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+         }
+
+         .island_box {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+
+            div {
+               background: rgba(0, 0, 0, 0.05);
+            }
+
+            p {
+               color: rgba(0, 0, 0, 0.6);
+            }
+         }
+
+         .flex_box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+
+            .profile {
+               display: flex;
+               align-items: center;
+               gap: 10px;
+
+               div {
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+
+                  h3 {
+                     font-size: 16px;
+                     font-weight: 700;
+                     color: #000;
+                     margin-top: 10px;
+                  }
+
+                  p {
+                     font-size: 14px;
+                     font-weight: 500;
+                     color: rgba(0, 0, 0, 0.6);
+                  }
+               }
+
+            }
+
+            .view {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 200px;
+               height: 60px;
+               background-color: #000;
+               border-radius: 16px;
+               gap: 15px;
+
+               p {
+                  font-size: 14px;
+                  color: #fff;
+                  font-weight: 600;
+               }
+            }
+         }
+
+         .absolute {
+            position: absolute;
+            top: 50px;
+            right: -70px;
+         }
+      }
+
+      .right {
+         width: 50%;
+         height: auto;
+
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0px 40px 40px 0px;
+         }
+      }
+   }
+}
+
+@media(max-width: 1300px) {
+   .home {
+      .left {
+         .island {
+
+            p {
+               font-size: 14px;
+               color: #000;
+               font-weight: 600;
+            }
+         }
+
+         h1 {
+            font-size: 44px;
+            line-height: 60px;
+         }
+
+         p {
+            font-size: 14px;
+            line-height: 25px;
+         }
+
+         .flex_box {
+
+            .view {
+               width: 170px;
+               height: 50px;
+               gap: 15px;
+
+            }
+
+         }
+
+         .absolute {
+            position: absolute;
+            top: 50px;
+            right: -70px;
+            width: 130px;
+            height: 130px;
+         }
+      }
+   }
+}
+
+@media(max-width: 1000px) {
+   .home {
+      height: 100%;
+
+      .radius {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 90%;
+         height: 100%;
+
+         .left {
+            width: 100%;
+            height: 50%;
+            border-radius: 40px 40px 0 0;
+
+            .absolute {
+               display: none;
+               opacity: 0;
+            }
+         }
+
+
+         .right {
+            margin-bottom: 50px;
+            width: 100%;
+            height: 50%;
+
+            img {
+               width: 100%;
+               height: 50%;
+               border-radius: 0 0 40px 40px;
+
+            }
+
+         }
+      }
+   }
+
+}
+
+@media(max-width: 500px) {
+
+   .island_box {
+      display: flex;
+      flex-direction: column;
+      grid-area: 20px;
+   }
+
+   .radius {
+
+      .left {
+         padding: 20px;
+         height: 100vh;
+
+         h1 {
+            font-size: 24px;
+            line-height: 40px;
+         }
+
+         p {
+            font-size: 14px;
+            line-height: 25px;
+         }
+
+         .flex_box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+         }
+      }
+   }
+
+}

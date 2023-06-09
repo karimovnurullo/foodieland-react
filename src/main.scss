@@ -23,15 +23,31 @@
 #root {
 	width: 100%;
 	margin: auto;
+	height: fit-content;
 	background-color: #fff;
 	// font-family: 'Poppins', sans-serif;
 	font-family: 'Inter', sans-serif;
 	padding: 0 80px;
-	background-color: red;
+	padding-top: 150px;
 }
 
 @media(max-width: 992px) {
 	#root {
 		padding: 0 60px;
+		padding-top: 120px;
+	}
+}
+
+@media(max-width: 767px) {
+	#root {
+		padding: 0 40px;
+		padding-top: 100px;
+	}
+}
+
+@media(max-width: 467px) {
+	#root {
+		padding: 0 16px;
+		padding-top: 80px;
 	}
 }
