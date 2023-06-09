@@ -66,7 +66,7 @@
          }
 
          .content_box {
-            height: 100%;
+            height: fit-content;
 
             .title {
                line-height: 32px;
@@ -123,6 +123,15 @@
 
 @media(max-width: 767px) {
    .recipes {
+      .title {
+         font-size: 40px;
+      }
+
+      .subtitle {
+         font-size: 16px;
+         line-height: 28px;
+      }
+
       .card_box {
          .card {
             .content_box {
@@ -132,9 +141,6 @@
                }
 
                .flex {
-                  gap: 30px;
-                  margin-top: 20px;
-
                   div {
                      gap: 15px;
 
@@ -151,9 +157,49 @@
 
 @media(max-width: 500px) {
    .recipes {
+      .title {
+         font-size: 30px;
+      }
+
+      .subtitle {
+         font-size: 14px;
+         line-height: 28px;
+      }
+
       .card_box {
+         padding-top: 50px;
+
          .card {
-            width: 100%;
+            width: 95%;
+
+            .img_box {
+               .like {
+                  width: 30px;
+                  height: 30px;
+                  object-fit: cover;
+                  top: 15px;
+                  right: 15px;
+               }
+            }
+
+            .content_box {
+               .title {
+                  line-height: 25px;
+                  font-size: 18px;
+               }
+
+               .flex {
+                  gap: 30px;
+
+                  div {
+                     gap: 10px;
+
+                     p {
+                        font-size: 13px;
+                     }
+                  }
+               }
+            }
          }
       }
    }
