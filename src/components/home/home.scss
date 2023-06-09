@@ -10,7 +10,6 @@
       .left {
          position: relative;
          width: 50%;
-         height: 100%;
          background: #E7FAFE;
          border-radius: 40px 0 0 40px;
          padding: 50px;
@@ -101,12 +100,18 @@
                background-color: #000;
                border-radius: 16px;
                gap: 15px;
-
+               cursor: pointer;
+               transition: all 0.2s;
+               &:hover {
+                  transform: scale(1.05);
+               }
                p {
                   font-size: 14px;
                   color: #fff;
                   font-weight: 600;
                }
+
+               
             }
          }
 
@@ -232,7 +237,7 @@
 }
 
 
-@media(max-width: 467px) {
+@media(max-width: 500px) {
 
    .island_box {
       display: flex;
