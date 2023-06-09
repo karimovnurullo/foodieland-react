@@ -21,7 +21,7 @@ import "./recipes.scss";
 class Recipes extends Component {
   render() {
     return (
-      <section class="section_3">
+      <section class="recipes">
         <h2 class="title">Simple and tasty recipes</h2>
         <p class="subtitle">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut <br /> labore et
@@ -29,16 +29,16 @@ class Recipes extends Component {
         </p>
         <div class="card_box">
           <Card img={img1} like={like} />
-          <Card img={img2} like={like} />
+          <Card img={img2} like={liked} />
           <Card img={img3} like={like} />
           <Card img={img4} like={like} />
-          <Card img={img5} like={like} />
+          <Card img={img5} like={liked} />
           <div class="card ads">
             <img src={img6} alt="" />
           </div>
-          <Card img={img7} like={like} />
+          <Card img={img7} like={liked} />
           <Card img={img8} like={like} />
-          <Card img={img9} like={like} />
+          <Card img={img9} like={liked} />
         </div>
       </section>
     );

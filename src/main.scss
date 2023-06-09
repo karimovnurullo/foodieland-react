@@ -21,7 +21,9 @@
 }
 
 #root {
+	position: relative;
 	width: 100%;
+	max-width: 1440px;
 	margin: auto;
 	height: fit-content;
 	background-color: #fff;

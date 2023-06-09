@@ -1,9 +1,9 @@
-.section_3 {
-   max-width: 1366px;
-   margin: auto;
+.recipes {
+   width: 100%;
    background-color: #fff;
    text-align: center;
-   padding: 80px;
+   padding-top: 150px;
+
 
    .title {
       font-size: 48px;
@@ -22,7 +22,7 @@
    .card_box {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
       margin: auto;
       justify-content: center;
       gap: 40px;
@@ -31,11 +31,19 @@
       padding-bottom: 100px;
 
       .card {
+         position: relative;
          width: 290px;
          height: 400px;
          padding: 15px;
          border-radius: 30px;
+         margin: auto;
          background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+         cursor: pointer;
+         transition: all 0.2s;
+
+         &:hover {
+            transform: scale(1.05);
+         }
 
          .img_box {
             width: 100%;
@@ -58,6 +66,7 @@
          }
 
          .content_box {
+            height: 100%;
 
             .title {
                line-height: 32px;
@@ -68,10 +77,14 @@
             }
 
             .flex {
+               height: fit-content;
+               position: absolute;
                display: flex;
                gap: 30px;
                align-items: center;
-               margin-top: 20px;
+               float: bottom;
+               left: 15px;
+               bottom: 15px;
 
                div {
                   display: flex;
@@ -108,91 +121,39 @@
    }
 }
 
-@media(max-width: 1350px) {
-   .section_3 {
-      // height: 100% !important;
-
+@media(max-width: 767px) {
+   .recipes {
       .card_box {
-         display: grid !important;
-         grid-template-columns: repeat(3, 1fr) !important;
-         justify-content: center !important;
-         margin: auto !important;
-
          .card {
-            margin: auto !important;
+            .content_box {
+               .title {
+                  line-height: 28px;
+                  font-size: 20px;
+               }
+
+               .flex {
+                  gap: 30px;
+                  margin-top: 20px;
+
+                  div {
+                     gap: 15px;
+
+                     p {
+                        font-size: 14px;
+                     }
+                  }
+               }
+            }
          }
-      }
-   }
-}
-
-@media(max-width: 1000px) {
-   .section_3 {
-
-      .card_box {
-         display: grid !important;
-         grid-template-columns: repeat(2, 1fr) !important;
-         justify-content: center !important;
-         margin: 0 auto !important;
-         gap: 20px !important;
-
-         .card {
-            margin: auto !important;
-         }
-      }
-   }
-}
-
-@media(max-width: 700px) {
-   .section_3 {
-      padding: 30px !important;
-      height: 100% !important;
-
-      .title {
-         font-size: 25px !important;
-      }
-
-      .card_box {
-         display: grid !important;
-         grid-template-columns: repeat(1, 1fr) !important;
-         margin: auto !important;
-         display: flex !important;
-         flex-direction: column !important;
-         justify-content: center !important;
-
-         .card {
-            margin: auto !important;
-         }
-
       }
    }
 }
 
 @media(max-width: 500px) {
-   .section_3 {
-      padding: 20px !important;
-
-      .title {
-         font-size: 32px !important;
-      }
-
+   .recipes {
       .card_box {
-
          .card {
-            margin: auto !important;
-            padding: 10px !important;
-
-            .img_box {
-               .like {
-                  top: 10px !important;
-                  right: 10px !important;
-                  width: 40px !important;
-                  height: 40px !important;
-               }
-            }
-
-            .title {
-               font-size: 22px !important;
-            }
+            width: 100%;
          }
       }
    }
