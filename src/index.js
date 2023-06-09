@@ -9,7 +9,6 @@ import "./main.scss";
  *  components
  *  images
  *  styles(css or sass)
- * ..
  */
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
