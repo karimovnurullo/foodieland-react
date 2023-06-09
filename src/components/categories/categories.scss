@@ -90,6 +90,10 @@
       .row {
          flex-direction: column;
          gap: 20px;
+
+         h2 {
+            font-size: 35px;
+         }
       }
 
       .card_box {

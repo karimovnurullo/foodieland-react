@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.png';
 import "./header.scss";
+
 class Header extends Component {
    render() { 
       return (
@@ -24,4 +25,5 @@ class Header extends Component {
    }
 }
  
+
 export default Header;
