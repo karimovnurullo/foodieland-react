@@ -14,7 +14,7 @@ class Shef extends Component {
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do br eiusmod tempor incididunt ut labore et
             dolore magna aliqut enim ad minim
           </p>
-          <a href="#">Learn More</a>
+          <div>Learn More</div>
         </div>
         <img src={img} alt="" />
       </section>

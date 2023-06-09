@@ -32,7 +32,8 @@
          margin-bottom: 60px;
       }
 
-      a {
+      div {
+         width: fit-content;
          padding: 20px 50px;
          color: #fff;
          font-size: 14px;
@@ -40,6 +41,13 @@
          background: #000000;
          font-weight: 600;
          text-decoration: none;
+         transition: all 0.2s;
+         cursor: pointer;
+
+         &:hover {
+            transform: scale(1.05);
+         }
+
       }
    }
 

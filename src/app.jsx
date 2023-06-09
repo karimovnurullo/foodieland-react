@@ -4,6 +4,7 @@ import Home from "./components/home/home";
 import Categories from "./components/categories/categories";
 import Recipes from "./components/recipes/recipes";
 import Shef from "./components/shef/shef";
+import Instagram from "./components/instagram/instagram";
 
 export default class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends React.Component {
         <Categories />
         <Recipes />
         <Shef />
+        <Instagram />
       </>
     );
   }
