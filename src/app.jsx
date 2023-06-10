@@ -7,6 +7,7 @@ import Shef from "./components/shef/shef";
 import Instagram from "./components/instagram/instagram";
 import Delicious from "./components/delicious/delicious";
 import Inbox from "./components/inbox/inbox";
+import Footer from "./components/footer/footer";
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Instagram />
         <Delicious />
         <Inbox />
+        <Footer />
       </>
     );
   }
