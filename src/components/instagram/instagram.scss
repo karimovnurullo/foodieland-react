@@ -178,24 +178,36 @@
       }
    }
 
-   .a {
-      width: 229px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      border-radius: 16px;
-      background: #000000;
-      margin: auto;
-      margin-top: 30px;
+   a {
+      text-decoration: none;
 
-      p {
+      .visit {
+         width: 229px;
+         height: 60px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
+         border-radius: 16px;
+         background: #000000;
+         margin: auto;
+         margin-top: 30px;
          color: #fff;
-         font-size: 14px;
-         font-weight: 600;
+         transition: all 0.2s;
+
+
+         a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+         }
+      }
+
+      &:hover .visit {
+         transform: scale(1.05);
       }
    }
+
 }
 
 

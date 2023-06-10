@@ -23,10 +23,10 @@ class Instagram extends Component {
           <Post img={img3} text={"The vegetables dishes need to have certain vitamin for those people"} />
           <Post img={img4} text={"The vegetables dishes need to have certain vitamin for those people"} />
         </div>
-        <a href="#">
-          <div class="a">
+        <a href="https://www.instagram.com/karimov_nurullo" className="a">
+          <div class="visit">
             <p>Visit Our Instagram</p>
-            <img src="./assets/images/section 5/instagram.png" alt="" />
+            <i class="fa-brands fa-instagram"></i>
           </div>
         </a>
       </section>
