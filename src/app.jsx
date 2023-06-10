@@ -6,6 +6,7 @@ import Recipes from "./components/recipes/recipes";
 import Shef from "./components/shef/shef";
 import Instagram from "./components/instagram/instagram";
 import Delicious from "./components/delicious/delicious";
+import Inbox from "./components/inbox/inbox";
 
 export default class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
         <Shef />
         <Instagram />
         <Delicious />
+        <Inbox />
       </>
     );
   }
