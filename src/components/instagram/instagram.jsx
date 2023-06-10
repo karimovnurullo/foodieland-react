@@ -11,7 +11,7 @@ import "./instagram.scss";
 class Instagram extends Component {
   render() {
     return (
-      <section class="section_5">
+      <section class="instagram">
         <h2 class="title">Check out @foodieland on Instagram</h2>
         <p class="subtitle">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore{" "}

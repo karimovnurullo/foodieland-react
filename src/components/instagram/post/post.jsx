@@ -35,7 +35,7 @@ class Post extends Component {
           </div>
         </div>
         <div class="img_box">
-          <img src={img1} class="img" alt="" />
+          <img src={this.img} class="img" alt="" />
           <img src="./assets/images/section 5/Photo Number.png" class="img_2" alt="" />
         </div>
         <div class="content_box">
